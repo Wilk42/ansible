@@ -203,6 +203,7 @@ notes:
   see U(https://support.microsoft.com/en-us/help/951016/description-of-user-account-control-and-remote-restrictions-in-windows).
 - For more information on this module and the various host requirements, see
   U(https://github.com/jborean93/pypsexec).
+- By default the data being sent to and from the server is encrypted to stop people listening in on the network from snooping your data. Unfortunately this uses SMB encryption which was added in the SMB 3.x dialects so hosts running Windows 7, Server 2008, or Server 2008 R2 will not work with encryption. Windows machines using versions of Psexec 2.1 and SMB 3 or more are encrypted.
 seealso:
 - module: raw
 - module: win_command
